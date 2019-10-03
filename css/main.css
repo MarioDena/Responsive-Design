@@ -321,9 +321,21 @@ select {
   height: 48px;
 }
 
+.navBar__headerLogoContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 106px;
+  height: 50px;
+  background: #ce0295;
+  background: -webkit-gradient(linear, left top, right top, from(#ce0295), color-stop(#e94057), to(#fe4225));
+  background: linear-gradient(to right, #ce0295, #e94057, #fe4225);
+}
+
 .navBar__headerLogo {
-  width: 100px;
-  height: 48px;
+  margin: auto;
+  width: 66px;
+  height: 16px;
 }
 
 .navBar__blackMenu {
@@ -334,30 +346,89 @@ select {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   width: 100vw;
   height: 30px;
-  background-color: yellow;
+  background-color: #fd3;
+}
+
+.navBar__yellowBar .yelloyBarText {
+  font-size: 10rem;
+  padding-left: 15vw;
 }
 
 .navBar__menuBar {
-  width: calc(100vw - 100px);
+  width: calc(100vw - 106px);
   height: 48px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
 }
 
-@media only screen and (min-width: 750px) {
+.navBar__icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-left: 1px solid #e2e2e2;
+  margin: 5px;
+  height: 48px;
+  width: 48px;
+}
+
+@media only screen and (min-width: 768px) {
   .navBar {
     height: 80px;
   }
-  .navBar__headerLogo {
+  .navBar__headerLogoContainer {
     height: 80px;
   }
   .navBar__blackMenu {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    width: calc(100vw - 100px);
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: calc(100vw - 106px);
     height: 32px;
     background-color: black;
+    font-size: 13rem;
+  }
+  .navBar__blackMenu .--rightAlignFlex {
+    display: none;
+  }
+  .inlineMenu {
+    margin: 0 6px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .inlineMenu__link {
+    color: grey;
+    margin: 0 6px;
+  }
+  .yellowBarText {
+    font-size: 15rem;
+    padding-left: 8vw;
+    color: #e94057;
+    background-color: #ce0295;
   }
 }
 /*# sourceMappingURL=main.css.map */
