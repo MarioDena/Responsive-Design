@@ -1,0 +1,47 @@
+.navBar {
+  display: flex;
+  width: 100vw;
+  height: 48px;
+
+  &__headerLogo {
+    width: 100px;
+    height: 48px;
+  }
+
+  &__blackMenu {
+    display: none;
+  }
+
+  &__yellowBar {
+    display: flex;
+    width: 100vw;
+    height: 30px;
+    background-color: yellow;
+  }
+
+  &__menuBar {
+    width: calc(100vw - 100px);
+    height: 48px;
+  }
+}
+
+@media only screen and (min-width: 750px) {
+  .navBar {
+    height: 80px;
+
+    &__headerLogo {
+      height: 80px;
+    }
+
+    &__blackMenu {
+      display: flex;
+      width: calc(100vw - 100px);
+      height: 32px;
+      background-color: black;
+    }
+  }
+}
+
+@media only screen and (min-width: 1050px) {
+    
+}
