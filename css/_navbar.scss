@@ -1,7 +1,16 @@
+header{
+  position: fixed;
+}
+
+a{
+  text-decoration: none;
+}
+
 .navBar {
+  
   display: flex;
   width: 100vw;
-  height: 48px;
+  height: 50px;
 
   &__headerLogoContainer {
     display: flex;
@@ -28,11 +37,6 @@
     width: 100vw;
     height: 30px;
     background-color: #fd3;
-
-    & .yelloyBarText {
-      font-size: 10rem;
-      padding-left: 15vw;
-    }
   }
 
   &__menuBar {
@@ -47,10 +51,19 @@
     align-items: center;
     justify-content: center;
     border-left: 1px solid rgb(226, 226, 226);
-    margin: 5px;
-    height: 48px;
-    width: 48px;
+    padding: 10px;
+    height: 50px;
+    width: 50px;
   }
+}
+
+.yellowBarText {
+  width: 100%;
+  text-align: center;
+  font-size: 12px;
+  padding-left: 30px;
+  padding-right: 30px;
+  color: black;
 }
 
 @media only screen and (min-width: 768px) {
@@ -67,7 +80,7 @@
       width: calc(100vw - 106px);
       height: 32px;
       background-color: black;
-      font-size: 13rem;
+      font-size: 13px;
 
       & .--rightAlignFlex {
         display: none;
@@ -85,10 +98,8 @@
     }
   }
   .yellowBarText {
-    font-size: 15rem;
-    padding-left: 8vw;
-    color: #e94057;
-    background-color: #ce0295;
+    font-size: 14px;
+    padding-left: 60px;
   }
 }
 
