@@ -1,0 +1,51 @@
+.coverContainer {
+  display: flex;
+  width: 100vw;
+  //padding-top: 80px;
+  flex-direction: column;
+}
+
+.cover-card {
+  flex-grow: 1;
+  height: 220px;
+  background-image: url(./img/coverCardImg1.jpg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  margin: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  color: white;
+
+  &__category {
+    margin-left: 10;
+    margin-top: 10px;
+    margin-right: 10px;
+    font-size: 14px;
+    font-family: "Krub", sans-serif;
+
+    text-shadow: 1px 0px 0px rgba(150, 150, 150, 1);
+  }
+
+  &__title {
+    font-size: 20px;
+    margin-left: 10;
+    margin-top: 10px;
+    margin-right: 10px;
+    font-weight: bold;
+    text-shadow: 1px 0px 0px rgba(150, 150, 150, 1);
+  }
+
+  &__info {
+    font-size: 12px;
+    margin: 10px;
+    color: grey;
+  }
+}
+
+@media only screen and (min-width: 1050px) {
+}
+
+@media only screen and (min-width: 768px) {
+}

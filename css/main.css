@@ -265,4 +265,66 @@ a {
     padding-left: 60px;
   }
 }
+
+.coverContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100vw;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.cover-card {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  height: 220px;
+  background-image: url(./img/coverCardImg1.jpg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  margin: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  color: white;
+}
+
+.cover-card__category {
+  margin-left: 10;
+  margin-top: 10px;
+  margin-right: 10px;
+  font-size: 14px;
+  font-family: "Krub", sans-serif;
+  text-shadow: 1px 0px 0px #969696;
+}
+
+.cover-card__title {
+  font-size: 20px;
+  margin-left: 10;
+  margin-top: 10px;
+  margin-right: 10px;
+  font-weight: bold;
+  text-shadow: 1px 0px 0px #969696;
+}
+
+.cover-card__info {
+  font-size: 12px;
+  margin: 10px;
+  color: grey;
+}
+
+main {
+  padding-top: 80px;
+}
 /*# sourceMappingURL=main.css.map */
