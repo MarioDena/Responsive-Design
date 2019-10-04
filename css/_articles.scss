@@ -1,0 +1,72 @@
+.articlesList {
+  margin: 50px 20px;
+  color: #fe4225;
+
+  &__header {
+    margin: 20px 0;
+  }
+
+  &__title {
+    font-family: "Kanit", sans-serif;
+    font-size: 27px;
+    font-weight: 600;
+  }
+
+  &__list {
+    margin: 20px 0;
+  }
+
+  &__right {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  &__link {
+    display: block;
+    color: #fe4225;
+    width: 100%;
+  }
+}
+
+.article {
+  width: 100%;
+  display: flex;
+  margin: 15px 0;
+
+  &__image {
+    width: 75px;
+    height: 75px;
+  }
+
+  &__info {
+    width: calc(100%-120px);
+    height: 75px;
+    padding: 0 0 10px 10px;
+    font-weight: bold;
+  }
+
+  &__author {
+    display: block;
+    font-weight: 400;
+    color: grey;
+    margin-top: 5px;
+    font-size: 12px;
+  }
+}
+
+.startupsLists {
+  margin: 20px 0;
+}
+
+.startup {
+  height: 200px;
+  width: 100%;
+  background: linear-gradient(
+    to bottom,
+    rgba(254, 66, 37, 1) 0%,
+    rgba(254, 66, 37, 1) 40%,
+    rgba(255, 235, 231, 1) 41%,
+    rgba(255, 235, 231, 1) 100%
+  );
+  display: flex;
+
+}

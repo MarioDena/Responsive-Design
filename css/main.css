@@ -140,6 +140,8 @@ table {
 
 header {
   position: fixed;
+  background: white;
+  z-index: 2;
 }
 
 a {
@@ -272,6 +274,7 @@ a {
   display: -ms-flexbox;
   display: flex;
   width: 100vw;
+  margin-bottom: 30px;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -310,6 +313,12 @@ a {
   left: 0;
   width: 100%;
   height: 100%;
+}
+
+.cover-card__layer:hover {
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(10%, rgba(43, 43, 43, 0.3)), to(#141414));
+  background: linear-gradient(to bottom, rgba(43, 43, 43, 0.3) 10%, #141414 100%);
+  cursor: pointer;
 }
 
 .cover-card__category {
@@ -366,6 +375,81 @@ a {
 
 .cover-card:last-child {
   background-image: url(./img/coverCardImg1.jpg);
+}
+
+.articlesList {
+  margin: 50px 20px;
+  color: #fe4225;
+}
+
+.articlesList__header {
+  margin: 20px 0;
+}
+
+.articlesList__title {
+  font-family: "Kanit", sans-serif;
+  font-size: 27px;
+  font-weight: 600;
+}
+
+.articlesList__list {
+  margin: 20px 0;
+}
+
+.articlesList__right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.articlesList__link {
+  display: block;
+  color: #fe4225;
+  width: 100%;
+}
+
+.article {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 15px 0;
+}
+
+.article__image {
+  width: 75px;
+  height: 75px;
+}
+
+.article__info {
+  width: calc(100%-120px);
+  height: 75px;
+  padding: 0 0 10px 10px;
+  font-weight: bold;
+}
+
+.article__author {
+  display: block;
+  font-weight: 400;
+  color: grey;
+  margin-top: 5px;
+  font-size: 12px;
+}
+
+.startupsLists {
+  margin: 20px 0;
+}
+
+.startup {
+  height: 200px;
+  width: 100%;
+  background: -webkit-gradient(linear, left top, left bottom, from(#fe4225), color-stop(40%, #fe4225), color-stop(41%, #ffebe7), to(#ffebe7));
+  background: linear-gradient(to bottom, #fe4225 0%, #fe4225 40%, #ffebe7 41%, #ffebe7 100%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 main {
