@@ -454,7 +454,7 @@ a {
 }
 
 .startup {
-  height: 200px;
+  height: 250px;
   width: 100%;
 }
 
@@ -471,6 +471,7 @@ a {
   margin-left: 10px;
   line-height: 25px;
   margin-top: 10px;
+  margin-bottom: 15px;
 }
 
 .startup__header {
@@ -515,7 +516,35 @@ a {
   color: gray;
 }
 
+.startup__icons {
+  width: 17px;
+  margin-right: 10px;
+}
+
+.startup__labels {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #4d4d4d;
+}
+
+.startup__footer {
+  font-size: 12px;
+  color: #4d4d4d;
+}
+
+.startup__footer > p a {
+  color: grey;
+}
+
 main {
   padding-top: 80px;
+}
+
+hr.style-one {
+  border: 1px solid #e2e2e2;
 }
 /*# sourceMappingURL=main.css.map */
