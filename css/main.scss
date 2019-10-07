@@ -26,3 +26,11 @@ hr.style-one {
     font-weight: 600;
   }
 }
+
+a {
+  color: grey;
+
+  &:hover {
+    color: black;
+  }
+}
