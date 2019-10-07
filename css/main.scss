@@ -2,11 +2,27 @@
 @import "navbar";
 @import "cover";
 @import "articles";
+@import "categories";
 
-main{
-    padding-top: 80px;
+main {
+  padding-top: 80px;
 }
 
 hr.style-one {
-    border: 1px solid rgb(226, 226, 226);    
+  border: 1px solid rgb(226, 226, 226);
+}
+
+.named-section {
+  margin: 50px 20px;
+  color: #fe4225;
+
+  &__header {
+    margin: 20px 0;
+  }
+
+  &__title {
+    font-family: "Kanit", sans-serif;
+    font-size: 27px;
+    font-weight: 600;
+  }
 }
