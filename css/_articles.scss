@@ -36,9 +36,14 @@
 
   &__info {
     width: calc(100%-120px);
+    color: black;
     height: 75px;
     padding: 0 0 10px 10px;
     font-weight: bold;
+    cursor: pointer;
+    &:hover{
+      color: #fe4225
+    }
   }
 
   &__author {
@@ -133,4 +138,30 @@
     }
   }
 
+}
+
+@media only screen and (min-width: 768px){
+
+  .articlesList {
+    color: #fe4225;
+  
+    &__list {
+      display:flex;
+      flex-wrap: wrap;
+      margin: 20px 0;
+    }
+  }
+
+  .article {
+    flex: 0 1 33%;
+    display: flex;
+    flex-direction: column;
+    margin: 15px 0;
+
+    &__image{
+      width: 100%;
+      height: 100%;
+      padding: 10px;
+    }
+  }
 }

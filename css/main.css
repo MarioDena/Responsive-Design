@@ -422,7 +422,7 @@ a {
             flex-direction: column;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    width: calc(100vw - 10px);
+    width: calc(100vw - 5px);
     height: 430px;
     overflow-x: hidden;
   }
@@ -432,13 +432,14 @@ a {
         -ms-flex: 1 1 25%;
             flex: 1 1 25%;
     width: 100%;
+    background-size: auto 100%;
+    background-position: 0 0;
   }
   .cover-card__title {
     font-size: 20px;
     width: 230px;
   }
   .--mainCoverCard {
-    background-size: auto 100%;
     height: 430px;
     width: 65vw;
     -webkit-box-flex: 2;
@@ -519,9 +520,15 @@ a {
 
 .article__info {
   width: calc(100%-120px);
+  color: black;
   height: 75px;
   padding: 0 0 10px 10px;
   font-weight: bold;
+  cursor: pointer;
+}
+
+.article__info:hover {
+  color: #fe4225;
 }
 
 .article__author {
@@ -617,6 +624,38 @@ a {
 
 .startup__footer > p a {
   color: grey;
+}
+
+@media only screen and (min-width: 768px) {
+  .articlesList {
+    color: #fe4225;
+  }
+  .articlesList__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin: 20px 0;
+  }
+  .article {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 33%;
+            flex: 0 1 33%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin: 15px 0;
+  }
+  .article__image {
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+  }
 }
 
 .categoryWrapper {
