@@ -18,6 +18,7 @@
   justify-content: flex-end;
   color: white;
   position: relative;
+  transition: 3s;
 
   &__layer {
     background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 10%, rgba(0, 0, 0, 1) 100%);
@@ -27,7 +28,7 @@
     width: 100%;
     height: 100%;
 
-    &:hover{
+    &:hover {
       background: linear-gradient(to bottom, rgba(43, 43, 43, 0.3) 10%, rgb(20, 20, 20) 100%);
       cursor: pointer;
     }
@@ -41,7 +42,7 @@
     font-family: "Krub", sans-serif;
     text-shadow: 1px 0px 0px rgba(150, 150, 150, 1);
   }
-
+  
   &__title {
     z-index: 1;
     font-size: 20px;
@@ -84,8 +85,49 @@
   background-image: url(./img/coverCardImg1.jpg);
 }
 
-@media only screen and (min-width: 1050px) {
+@media only screen and (min-width: 768px) {
+  .coverContainer {
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 430px;
+  }
+
+  .cover-card {
+    height: 200px;
+    flex: 1 1 25%;
+    width: 100%;
+    
+    &__title{
+      font-size: 20px;
+      width: 230px;
+    }
+  }
+  .--mainCoverCard {
+    background-size: auto 100%;
+    height: 430px;
+    width: 65vw;
+    flex: 2 1 100%;
+    
+    &>p{
+      width: inherit;
+
+      &.cover-card__title{
+        font-size: 36px;
+        font-weight: bolder;
+      }
+    }
+  }
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 1050px) {
+  .coverContainer {
+    height: 575px;
+  }
+  .cover-card {
+    flex: 1 1 25%;
+  }
+  .--mainCoverCard {
+    background-size: 100% 100%;
+    flex: 2 1 100%;
+  }
 }
