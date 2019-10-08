@@ -1,20 +1,18 @@
-header{
+header {
   position: fixed;
-    background: white;
-    z-index: 2;
+  background: white;
+  z-index: 2;
 }
 
-a{
+a {
   text-decoration: none;
 }
 
 .navBar {
-  
   display: flex;
   width: 100vw;
   height: 50px;
   position: relative;
-  
 
   &__headerLogoContainer {
     display: flex;
@@ -44,12 +42,17 @@ a{
   }
 
   &__menuBar {
-    width: calc(100vw - 106px);
+    width: calc(100vw - 120px);
     height: 48px;
     display: flex;
     align-items: center;
     justify-content: flex-end;
   }
+
+  &_listMenu {
+    display: none;
+  }
+
   &__icon {
     display: flex;
     align-items: center;
@@ -90,6 +93,20 @@ a{
         display: none;
       }
     }
+
+    &__menuBar {
+      width: calc(100vw - 120px);
+      height: 48px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    &_listMenu {
+      display: inline-block;
+      font-size: 14px;
+      font-family: "Krub", sans-serif;
+    }
   }
   .inlineMenu {
     margin: 0 6px;
@@ -97,13 +114,31 @@ a{
     align-items: center;
 
     &__link {
-      color: grey;
+      color: rgb(172, 172, 172);
       margin: 0 6px;
+
+      &:hover {
+        color: white;
+      }
     }
   }
+
+  .--activeLink {
+    color: white;
+  }
+  
   .yellowBarText {
     font-size: 14px;
     padding-left: 60px;
+  }
+
+  .--hamburguer {
+    display: none;
+  }
+
+  .--whiteBarlink {
+    margin: 0 10px;
+    text-shadow: 1px 0px 0px rgb(179, 179, 179);
   }
 }
 

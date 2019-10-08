@@ -191,7 +191,7 @@ a {
 }
 
 .navBar__menuBar {
-  width: calc(100vw - 106px);
+  width: calc(100vw - 120px);
   height: 48px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -202,6 +202,10 @@ a {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
+}
+
+.navBar_listMenu {
+  display: none;
 }
 
 .navBar__icon {
@@ -251,6 +255,24 @@ a {
   .navBar__blackMenu .--rightAlignFlex {
     display: none;
   }
+  .navBar__menuBar {
+    width: calc(100vw - 120px);
+    height: 48px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .navBar_listMenu {
+    display: inline-block;
+    font-size: 14px;
+    font-family: "Krub", sans-serif;
+  }
   .inlineMenu {
     margin: 0 6px;
     display: -webkit-box;
@@ -261,12 +283,25 @@ a {
             align-items: center;
   }
   .inlineMenu__link {
-    color: grey;
+    color: #acacac;
     margin: 0 6px;
+  }
+  .inlineMenu__link:hover {
+    color: white;
+  }
+  .--activeLink {
+    color: white;
   }
   .yellowBarText {
     font-size: 14px;
     padding-left: 60px;
+  }
+  .--hamburguer {
+    display: none;
+  }
+  .--whiteBarlink {
+    margin: 0 10px;
+    text-shadow: 1px 0px 0px #b3b3b3;
   }
 }
 
