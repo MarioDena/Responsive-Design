@@ -2,26 +2,27 @@
   color: #fe4225;
 
   &__list {
-    margin: 20px 0;
+    margin: 5px 0 10px 0;
   }
 
   &__right {
     display: flex;
     flex-wrap: wrap;
     margin-bottom: 25px;
-  }
-  &__link {
-    display: block;
-    color: #fe4225;
-    width: 100%;
-    font-size: 14px;
-    margin-top: 15px;
+    flex-direction: column;
   }
 
-  &__titleContainer{
-    display: flex;
-    flex-wrap: wrap;
+  &__link {
+    color: #fe4225;
+    font-size: 14px;
+    margin-top: 15px;
+    
+    & b{
+      display: none;
+      margin: 0 10px;
+    }
   }
+
 }
 
 .article {
@@ -149,6 +150,19 @@
       display:flex;
       flex-wrap: wrap;
     }
+
+    &__right{
+      display: flex;
+      flex-direction: row;
+    }
+
+    &__link{
+      font-size: 16px;
+
+      & b{
+        display: inline;
+      }
+    } 
   }
 
   .article {
