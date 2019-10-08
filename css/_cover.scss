@@ -1,5 +1,6 @@
 .coverContainer {
   display: flex;
+  width: 100vw;
   margin-bottom: 30px;
   flex-direction: column;
 }
@@ -88,7 +89,7 @@
   .coverContainer {
     flex-direction: column;
     flex-wrap: wrap;
-    width: calc(100vw - 5px);
+    width: calc(100vw - 10px);
     height: 430px;
     overflow-x: hidden;
   }
@@ -97,21 +98,20 @@
     height: 200px;
     flex: 1 1 25%;
     width: 100%;
-    background-position: 0 0;
-    background-size: auto 100%;
     
     &__title{
       font-size: 20px;
+      width: 230px;
     }
   }
   .--mainCoverCard {
     background-size: auto 100%;
     height: 430px;
-    width: 65%;
-    flex: 2 1 65%;
+    width: 65vw;
+    flex: 2 1 100%;
     
     &>p{
-      width: 95%;
+      width: inherit;
 
       &.cover-card__title{
         font-size: 36px;
@@ -124,7 +124,6 @@
 @media only screen and (min-width: 1050px) {
   .coverContainer {
     height: 575px;
-    width: 97vw;
   }
   .cover-card {
     flex: 1 1 25%;

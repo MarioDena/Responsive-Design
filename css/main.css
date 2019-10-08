@@ -309,6 +309,7 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  width: 100vw;
   margin-bottom: 30px;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
@@ -421,7 +422,7 @@ a {
             flex-direction: column;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    width: calc(100vw - 5px);
+    width: calc(100vw - 10px);
     height: 430px;
     overflow-x: hidden;
   }
@@ -431,22 +432,21 @@ a {
         -ms-flex: 1 1 25%;
             flex: 1 1 25%;
     width: 100%;
-    background-position: 0 0;
-    background-size: auto 100%;
   }
   .cover-card__title {
     font-size: 20px;
+    width: 230px;
   }
   .--mainCoverCard {
     background-size: auto 100%;
     height: 430px;
-    width: 65%;
+    width: 65vw;
     -webkit-box-flex: 2;
-        -ms-flex: 2 1 65%;
-            flex: 2 1 65%;
+        -ms-flex: 2 1 100%;
+            flex: 2 1 100%;
   }
   .--mainCoverCard > p {
-    width: 95%;
+    width: inherit;
   }
   .--mainCoverCard > p.cover-card__title {
     font-size: 36px;
@@ -457,7 +457,6 @@ a {
 @media only screen and (min-width: 1050px) {
   .coverContainer {
     height: 575px;
-    width: 97vw;
   }
   .cover-card {
     -webkit-box-flex: 1;
