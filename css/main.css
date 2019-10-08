@@ -422,7 +422,9 @@ a {
             flex-direction: column;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+    width: calc(100vw - 5px);
     height: 430px;
+    overflow-x: hidden;
   }
   .cover-card {
     height: 200px;
@@ -430,6 +432,8 @@ a {
         -ms-flex: 1 1 25%;
             flex: 1 1 25%;
     width: 100%;
+    background-position: 0 0;
+    background-size: auto 100%;
   }
   .cover-card__title {
     font-size: 20px;

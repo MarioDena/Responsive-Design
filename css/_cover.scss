@@ -89,13 +89,17 @@
   .coverContainer {
     flex-direction: column;
     flex-wrap: wrap;
+    width: calc(100vw - 5px);
     height: 430px;
+    overflow-x: hidden;
   }
 
   .cover-card {
     height: 200px;
     flex: 1 1 25%;
     width: 100%;
+    background-position: 0 0;
+    background-size: auto 100%;
     
     &__title{
       font-size: 20px;
