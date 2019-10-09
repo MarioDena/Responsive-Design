@@ -703,7 +703,7 @@ a {
 }
 
 .category__latestText {
-  padding: 10px 0 0 20px;
+  padding: 10px 10px 0 20px;
 }
 
 .category__latestText > span {
@@ -718,8 +718,9 @@ a {
 }
 
 .category__latestImage {
-  height: 96px;
-  width: 96px;
+  min-height: 96px;
+  max-height: 96px;
+  max-width: 96px;
 }
 
 .category__body {
@@ -855,6 +856,21 @@ a {
 
 .--cat8 {
   background-image: url(./img/category8.jpg);
+}
+
+@media only screen and (min-width: 768px) {
+  .category {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 0 50%;
+            flex: 1 0 50%;
+    padding: 10px;
+  }
+  .category__header {
+    height: 35vw;
+  }
+  .image-card {
+    background-size: auto 100%;
+  }
 }
 
 .footerContainer {

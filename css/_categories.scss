@@ -18,7 +18,7 @@
   }
 
   &__latestText {
-    padding: 10px 0 0 20px;
+    padding: 10px 10px 0 20px;
 
     & > span {
       font-size: 13px;
@@ -32,8 +32,9 @@
   }
 
   &__latestImage {
-    height: 96px;
-    width: 96px;
+    min-height: 96px;
+    max-height: 96px;
+    max-width: 96px;
   }
 
   &__body {
@@ -156,4 +157,19 @@
 
 .--cat8 {
   background-image: url(./img/category8.jpg);
+}
+
+@media only screen and (min-width: 768px) {
+  .category {
+    flex: 1 0 50%;
+    padding: 10px;
+
+    &__header {
+      height: 35vw;
+    }
+  }
+
+  .image-card {
+    background-size: auto 100%;
+  }
 }
