@@ -148,7 +148,14 @@
       background: linear-gradient(to bottom right, #e2360cb7 5%, #fe4225c7 30%, rgba(0, 0, 0, 0.8) 70%, rgba(0, 0, 0, 1) 100%);
 
       &:hover {
-        background: linear-gradient(to bottom right, #f05112b7 5%, #fe4225c7 30%, rgba(30, 30, 30, 0.8) 70%, rgba(20, 20, 20, 1) 100%);
+        background:
+          linear-gradient(
+            to bottom right,
+            #f05112b7 5%,
+            #fe4225c7 30%,
+            rgba(30, 30, 30, 0.8) 70%,
+            rgba(20, 20, 20, 1) 100%
+          );
         cursor: pointer;
       }
     }
