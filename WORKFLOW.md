@@ -16,12 +16,12 @@
 
 # Steps to follow
 
-* make mobile view
-* Add Components to each sections
-* Add tablet media queries
-* Add logo change
-* make desktop queries
-* check for sticler errors
+[x] make mobile view
+[x] Add Components to each sections
+[x] Add tablet media queries
+[] Add logo change
+[] make desktop queries
+[] check for sticler errors
 
 # Sections
 
