@@ -42,7 +42,7 @@
     font-family: "Krub", sans-serif;
     text-shadow: 1px 0px 0px rgba(150, 150, 150, 1);
   }
-  
+
   &__title {
     z-index: 1;
     font-size: 20px;
@@ -100,22 +100,21 @@
     width: 100%;
     background-size: auto 100%;
     background-position: 0 0;
-    
-    &__title{
+
+    &__title {
       font-size: 20px;
       width: 230px;
     }
   }
   .--mainCoverCard {
-    
     height: 430px;
     width: 65vw;
     flex: 2 1 100%;
-    
-    &>p{
+
+    & > p {
       width: inherit;
 
-      &.cover-card__title{
+      &.cover-card__title {
         font-size: 36px;
         font-weight: bolder;
       }
@@ -129,9 +128,18 @@
   }
   .cover-card {
     flex: 1 1 25%;
+    
   }
   .--mainCoverCard {
     background-size: 100% 100%;
     flex: 2 1 100%;
+
+    & .cover-card__layer {
+      background: linear-gradient(to bottom right,rgba(243, 64, 9, 0.904) 5%, rgba(180, 64, 28, 0.719) 30%, rgba(0, 0, 0, 0.8) 70%, rgba(0, 0, 0, 1) 100%);
+      &:hover {
+        background: linear-gradient(to bottom right,rgba(248, 76, 33, 0.904) 5%, rgba(180, 64, 28, 0.719) 30%, rgba(30, 30, 30, 0.8) 70%, rgba(20, 20, 20, 1) 100%);
+        cursor: pointer;
+      }
+    }
   }
 }
