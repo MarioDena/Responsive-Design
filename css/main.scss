@@ -41,3 +41,10 @@ a {
     padding-top: 110px;
   }
 }
+
+@media only screen and (min-width: 1050px) {
+  .named-section {
+    max-width: 1200px;
+    margin: 50px auto;
+  }
+}

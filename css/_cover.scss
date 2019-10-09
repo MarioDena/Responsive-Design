@@ -18,7 +18,7 @@
   justify-content: flex-end;
   color: white;
   position: relative;
-  transition: .5s;
+  transition: 0.5s;
 
   &__layer {
     background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 10%, rgba(0, 0, 0, 1) 100%);
@@ -33,6 +33,7 @@
       cursor: pointer;
     }
   }
+
   &__category {
     z-index: 1;
     margin-left: 10;
@@ -40,7 +41,7 @@
     margin-right: 10px;
     font-size: 14px;
     font-family: "Krub", sans-serif;
-    text-shadow: 1px 0px 0px rgba(150, 150, 150, 1);
+    text-shadow: 1px 0 0 rgba(150, 150, 150, 1);
   }
 
   &__title {
@@ -50,7 +51,7 @@
     margin-top: 10px;
     margin-right: 10px;
     font-weight: bold;
-    text-shadow: 1px 0px 0px rgba(150, 150, 150, 1);
+    text-shadow: 1px 0 0 rgba(150, 150, 150, 1);
   }
 
   &__info {
@@ -106,6 +107,7 @@
       width: 230px;
     }
   }
+
   .--mainCoverCard {
     height: 430px;
     width: 65vw;
@@ -127,20 +129,26 @@
   .coverContainer {
     height: 530px;
   }
+
   .cover-card {
-    flex: 1 1 25%;
+    flex: 1 0 25%;
+    background-size: 50% auto;
+    background-position: 0 50%;
+
     &__title {
       width: 350px;
     }
-    
   }
+
   .--mainCoverCard {
     flex: 2 1 100%;
+    background-size: 100% 100%;
 
     & .cover-card__layer {
-      background: linear-gradient(to bottom right, #ce0294b7 5%, #fe4225c7 30%, rgba(0, 0, 0, 0.8) 70%, rgba(0, 0, 0, 1) 100%);
+      background: linear-gradient(to bottom right, #e2360cb7 5%, #fe4225c7 30%, rgba(0, 0, 0, 0.8) 70%, rgba(0, 0, 0, 1) 100%);
+
       &:hover {
-        background: linear-gradient(to bottom right, #ce0294b7 5%, #fe4225c7 30%, rgba(30, 30, 30, 0.8) 70%, rgba(20, 20, 20, 1) 100%);
+        background: linear-gradient(to bottom right, #f05112b7 5%, #fe4225c7 30%, rgba(30, 30, 30, 0.8) 70%, rgba(20, 20, 20, 1) 100%);
         cursor: pointer;
       }
     }

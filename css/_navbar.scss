@@ -8,7 +8,7 @@ a {
   text-decoration: none;
 }
 
-.modalLogo{
+.modalLogo {
   display: none;
 }
 
@@ -113,6 +113,7 @@ a {
       font-family: "Krub", sans-serif;
     }
   }
+
   .inlineMenu {
     margin: 0 6px;
     display: flex;
@@ -131,7 +132,7 @@ a {
   .--activeLink {
     color: white;
   }
-  
+
   .yellowBarText {
     font-size: 14px;
     padding-left: 60px;
@@ -143,34 +144,57 @@ a {
 
   .--whiteBarlink {
     margin: 0 10px;
-    text-shadow: 1px 0px 0px rgb(179, 179, 179);
+    text-shadow: 1px 0 0 rgb(179, 179, 179);
   }
 }
 
 @media only screen and (min-width: 1050px) {
-
-  .navbar__icon{
+  .navbar__icon {
     margin-right: 10px;
   }
 
-  .navbar__headerLogoContainer{
+  .navbar__headerLogoContainer {
     display: none;
   }
 
-  .navbar__menuBar{
+  .navbar__menuBar {
     width: 100vw;
   }
 
-  .navbar__blackMenu{
+  .navbar__blackMenu {
     width: 100vw;
+    justify-content: space-between;
+
+    & > .--rightAlignFlex {
+      display: flex;
+      margin: 0 35px;
+      z-index: 1;
+
+      & > a {
+        margin: 0 20px;
+      }
+    }
   }
 
-  .modalLogo{
-    display: block;
+  .modalLogo {
+    display: flex;
     z-index: 1;
-    max-width: 40vw;
+    max-width: 30vw;
     position: absolute;
     top: 10px;
     left: 10px;
+
+    &__date {
+      position: absolute;
+      top: 15px;
+      right: 20px;
+      text-align: end;
+      font-size: 14px;
+    }
+  }
+
+  .yellowBarText {
+    text-align: left;
+    padding-left: 20px;
   }
 }
