@@ -12,12 +12,14 @@
   }
 
   &__latest {
+    margin-top: 3px;
     display: flex;
     background-color: rgb(255, 235, 231);
     justify-content: space-between;
   }
 
   &__latestText {
+    
     padding: 10px 10px 0 20px;
 
     & > span {
@@ -166,6 +168,21 @@
 
     &__header {
       height: 35vw;
+    }
+  }
+
+  .image-card {
+    background-size: auto 100%;
+  }
+}
+
+@media only screen and (min-width: 1050px) {
+  .category {
+    flex: 0 0 33%;
+    padding: 10px;
+
+    &__header {
+      height: 25vw;
     }
   }
 

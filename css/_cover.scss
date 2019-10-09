@@ -18,7 +18,7 @@
   justify-content: flex-end;
   color: white;
   position: relative;
-  transition: 3s;
+  transition: .5s;
 
   &__layer {
     background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 10%, rgba(0, 0, 0, 1) 100%);
@@ -117,6 +117,7 @@
       &.cover-card__title {
         font-size: 36px;
         font-weight: bolder;
+        width: 95%;
       }
     }
   }
@@ -124,20 +125,22 @@
 
 @media only screen and (min-width: 1050px) {
   .coverContainer {
-    height: 575px;
+    height: 530px;
   }
   .cover-card {
     flex: 1 1 25%;
+    &__title {
+      width: 350px;
+    }
     
   }
   .--mainCoverCard {
-    background-size: 100% 100%;
     flex: 2 1 100%;
 
     & .cover-card__layer {
-      background: linear-gradient(to bottom right,rgba(243, 64, 9, 0.904) 5%, rgba(180, 64, 28, 0.719) 30%, rgba(0, 0, 0, 0.8) 70%, rgba(0, 0, 0, 1) 100%);
+      background: linear-gradient(to bottom right, #ce0294b7 5%, #fe4225c7 30%, rgba(0, 0, 0, 0.8) 70%, rgba(0, 0, 0, 1) 100%);
       &:hover {
-        background: linear-gradient(to bottom right,rgba(248, 76, 33, 0.904) 5%, rgba(180, 64, 28, 0.719) 30%, rgba(30, 30, 30, 0.8) 70%, rgba(20, 20, 20, 1) 100%);
+        background: linear-gradient(to bottom right, #ce0294b7 5%, #fe4225c7 30%, rgba(30, 30, 30, 0.8) 70%, rgba(20, 20, 20, 1) 100%);
         cursor: pointer;
       }
     }

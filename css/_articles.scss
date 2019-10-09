@@ -181,3 +181,15 @@
     padding: 10px;
   }
 }
+
+
+@media only screen and (min-width: 1050px){
+
+  .article {
+    flex: 0 1 25%;
+  }
+
+  .startup{
+    flex: 0 1 25%;
+  }
+}
