@@ -367,8 +367,6 @@ a {
           justify-content: flex-end;
   color: white;
   position: relative;
-  -webkit-transition: .5s;
-  transition: .5s;
 }
 
 .cover-card__layer {
