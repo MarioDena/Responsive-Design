@@ -1,7 +1,7 @@
 ![img](https://img.shields.io/github/issues/MarioDena/Responsive-Design)
 ![img2](https://img.shields.io/github/license/MarioDena/Responsive-Design)
 
-# Design-Teardown
+# Responsive-Design
 <br />
 <p align="center">
   <a href="https://github.com/MarioDena">
@@ -9,7 +9,7 @@
   </a>
 
   <h3 align="center">
-	 Design-Teardown
+	 Responsive-Design
   </h3>
 
   <h3 align="center">
