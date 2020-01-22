@@ -16,8 +16,8 @@ This project consists of building a copy of the [this site](https://thenextweb.c
 
 # License
 
-!https://img.shields.io/github/issues/MarioDena/Responsive-Design
-!https://img.shields.io/github/license/MarioDena/Responsive-Design
+[!https://img.shields.io/github/issues/MarioDena/Responsive-Design]
+[!https://img.shields.io/github/license/MarioDena/Responsive-Design]
 
 # Design-Teardown
 <br />
