@@ -1,4 +1,4 @@
-[img]![https://img.shields.io/github/issues/MarioDena/Responsive-Design]
+[img][https://img.shields.io/github/issues/MarioDena/Responsive-Design]
 [!https://img.shields.io/github/license/MarioDena/Responsive-Design]
 
 # Design-Teardown
