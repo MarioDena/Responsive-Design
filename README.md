@@ -1,21 +1,3 @@
-# Design-Teardown
-
-This project consists of building a copy of the [this site](https://thenextweb.com/).  The goal for this project is to start working on responsiveness using 3 media break points.
-
-# Built With
-
-* Flex
-* BEM Naming convention
-* SASS precompiler
-* HTML5
-
-# Authors
-
-* [Mario Dena](https://github.com/MarioDena).
-* [Israel Laguan](https://github.com/Israel-Laguan)
-
-# License
-
 [!https://img.shields.io/github/issues/MarioDena/Responsive-Design]
 [!https://img.shields.io/github/license/MarioDena/Responsive-Design]
 
@@ -34,7 +16,6 @@ This project consists of building a copy of the [this site](https://thenextweb.c
 	 Live Version - https://mariodena.github.io/Responsive-Design/
   </h3>
 
-  <p align="center">
    This project consists of building a copy of [this site](https://thenextweb.com/). The goal for this project is to start working on responsiveness using 3 media break points.
 
 # Validations
